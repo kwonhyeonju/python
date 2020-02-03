@@ -21,7 +21,7 @@ else:
 # 113
 # 보류
 
-money = input(">> 입력 : ").split(' ')
+money = input(">> 입력(ex. 100 달러) : ").split(' ')
 num = money[0]
 won = money[1]
 
@@ -57,21 +57,40 @@ else:
 post = str(input(">> 우편번호: "))
 if post[2] == '0':
     print("강북구")
-elif post[2] == 1:
+elif post[2] == '1':
     print("강북구")
-elif post[2] == 2:
+elif post[2] == '2':
     print("강북구")
-elif post[2] == 3:
+elif post[2] == '3':
     print("도봉구")
-elif post[2] == 4:
+elif post[2] == '4':
     print("도봉구")
-elif post[2] == 5:
+elif post[2] == '5':
     print("도봉구")
-elif post[2] == 6:
+elif post[2] == '6':
     print("노원구")
-elif post[2] == 7:
+elif post[2] == '7':
     print("노원구")
-elif post[2] == 8:
+elif post[2] == '8':
     print("노원구")
-elif post[2] == 9:
+elif post[2] == '9':
     print("노원구")
+'''
+if post[2] in "012":
+    print("강북구")
+elif post[2] in "345":
+    print("도봉구")
+elif psot[2] in "6789":
+    print("노원구")
+'''
+
+# 117
+n = input(">> 주민등록번호: ")
+n2 = n.split('-')
+print(n2)
+if n2[1][0] in '13':
+    print("남자")
+elif n2[1][0] in '24':
+    print("여자")
+
+# 118
