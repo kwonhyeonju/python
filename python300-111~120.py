@@ -1,4 +1,5 @@
 # 111
+import requests
 a = str(input(">> "))
 if a.islower() == True:
     print(a.upper())
@@ -75,6 +76,9 @@ elif post[2] == '8':
     print("노원구")
 elif post[2] == '9':
     print("노원구")
+else:
+    pass
+
 '''
 if post[2] in "012":
     print("강북구")
@@ -92,5 +96,49 @@ if n2[1][0] in '13':
     print("남자")
 elif n2[1][0] in '24':
     print("여자")
+else:
+    pass
 
 # 118
+n = input(">> 주민등록번호: ")
+n2 = n.split('-')
+print(n2)
+if n2[1][1:3] in ['00', '01', '02', '03', '04', '05', '06', '07', '08']:
+    print("서울 입니다.")
+elif n2[1][1:3] in ['09', '10', '11', '12']:
+    print("서울이 아닙니다.")
+else:
+    pass
+
+# 119
+n = input(">> 주민등록번호(13자리): ")
+if len(n) <= 14:
+    n2 = n.split('-')
+    a = 2
+    total = 0
+    for i in range(2):
+        # i = 0,1
+        for j in range(6):
+            if i == 1 & j == 6:
+                break
+            else:
+                ssum = int(n2[i][j]) * a
+                #print("{}*{}={}".format(int(n2[i][j]), a, ssum))
+                total += ssum
+
+                if a == 9:
+                    a = 2
+                else:
+                    a += 1
+    # print(total)
+    #print(total % 11)
+    if 11-(total % 11) == int(n2[1][-1]):
+        print("유효한 주민등록 번호입니다.")
+    else:
+        print("유효하지 않은 주민등록 번호입니다.")
+
+# 120
+btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
+
+print("{}:{}".format(key, btc[key]))
+# ?? 모듈이 없다는건 뭐지

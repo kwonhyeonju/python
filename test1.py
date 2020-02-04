@@ -16,8 +16,3 @@ print(int(seconds_per_day)/int(seconds_per_hour))
 
 # 6
 print(int(seconds_per_day)//int(seconds_per_hour))
-
-
-# test
-ice = {"a": 1, "b": 2}
-print(ice["a"])
