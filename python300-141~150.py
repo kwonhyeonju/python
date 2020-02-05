@@ -7,6 +7,7 @@ for 알파벳 in my_list:
         pass
 
 # 142
+print("142번")
 for 알파벳 in my_list:
     if 알파벳.islower():
         print(알파벳)
@@ -15,13 +16,14 @@ for 알파벳 in my_list:
 
 # 143
 # 어떻게 합치지?
-'''
+
 for 알파벳 in my_list:
     if 알파벳.islower():
-        알파벳.upper()
+        print(알파벳.upper(), end="")
     else:
-        알파벳.lower()
-'''
+        print(알파벳.lower(), end="")
+print()
+
 
 
 # 144
