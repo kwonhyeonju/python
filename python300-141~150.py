@@ -16,14 +16,12 @@ for 알파벳 in my_list:
 
 # 143
 # 어떻게 합치지?
-
 for 알파벳 in my_list:
     if 알파벳.islower():
         print(알파벳.upper(), end="")
     else:
         print(알파벳.lower(), end="")
 print()
-
 
 
 # 144

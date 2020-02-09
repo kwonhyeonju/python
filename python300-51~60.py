@@ -23,14 +23,15 @@ print(interest[::2])  # 이거 틀림!!
 interest2 = ['삼성전자', 'lg전자', 'Naver', 'sk하이닉스', '미래에셋대우']
 print(interest2[0], interest2[1], interest2[2], interest2[3], interest2[4])
 # 이거 말고 다른방법이 있나...?
-# .join()을 이용해 ' '을 삽입할 수 있다
-print(interest2.join())
+# .join()을 이용해 ' '을 삽입할 수 있다!!(join쓰는 방법 주의)
+print(' '.join(interest2))
 
 # 057
 # print(interest2[0]'/'interest[1]'/'interest2[2]'/'interest2[3]'/'interest2[4])
 # 다른방법이 있을것 같은데..
 # ㅋㅋㅋㅋㅋ틀림
-# print(interest2.join('/'))
+print('/'.join(interest2))
+
 
 # 058
 print('\n'.join(interest2))

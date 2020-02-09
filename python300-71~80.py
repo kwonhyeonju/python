@@ -17,6 +17,8 @@ print("{} 가격: {}".format("메로나", icecream["메로나"]))
 icecream.update("메로나": 1300)
 print(icecream)
 
+#정답: icecream['메로나']=1300
+
 # 079
 del icecream["메로나"]
 

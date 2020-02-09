@@ -40,3 +40,4 @@ i = 0
 for i in range(len(data)):
     close_table[data[i]] = close_price[i]
 print(close_table)
+#--zip()을 이용해서 할 수 있음--

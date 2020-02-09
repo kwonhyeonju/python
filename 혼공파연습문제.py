@@ -8,6 +8,6 @@ print(output[0], output[1], output[2])
 for number in numbers:
     print(number)
 
-    output[number-1 % 3].append(number)
+    output[number].append(number)
 
     print(output)
